@@ -5,6 +5,7 @@
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 <style>
+ body{font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;}   
  model-viewer {
  width: 100%;
  height: 100%;
@@ -12,9 +13,19 @@
   model-viewer#model {
   --poster-color: transparent;
  }
+  .words{
+     position: absolute;
+     color:#ffffff; 
+     text-shadow:0px 0px 2.5px #fff;
+     display:inline-block;
+     margin-top:-10px; 
+     }       
 </style>  
 </head>
 <body> 
+  <div class='words' >
+    <H1>Option 2</H1>
+  </div>  
 <model-viewer camera-controls auto-rotate  alt="A BELT SYSTEM BY DTS INC" src="box2.glb" shadow-intensity="0">
 </model-viewer>
 </body> 
