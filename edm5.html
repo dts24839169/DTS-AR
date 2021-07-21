@@ -35,6 +35,21 @@
   <img src="box_images/童車-01.png" width='210px' height='133px'style="position:relative;top:300px;right:250px;">
   </div>
 <style type="text/css">
+  #DIV1{
+width:200px;　//DIV區塊寬度
+line-height:50px;　//DIV區塊高度
+padding:20px;　//DIV區塊內距，參閱：CSS padding 內距。
+border:2px blue solid;　//DIV區塊邊框，參閱：CSS border 邊框設計。
+margin-right:10px;　//靠右外距，參閱：CSS margin 邊界使用介紹範例教學。
+float:left;
+}
+#DIV2{
+width:200px;
+line-height:50px;
+padding:20px;
+border:2px green solid;
+float:left;
+}
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:1px 11px;word-break:normal;}
@@ -54,7 +69,7 @@
 .tg .tg-1acm{background-color:#e4b225;border-color:#5a5b5b;font-family:Arial, Helvetica, sans-serif !important;;font-size:14px;
   text-align:center;vertical-align:top}
 </style>
-<table class="tg">
+<div id="DIV1"><table class="tg">
 <thead>
   <tr>
     <th class="tg-a2cf" colspan="4">STARTER A</th>
@@ -97,10 +112,10 @@
     <td class="tg-ona5">994</td>
     <td class="tg-1acm">1032</td>
   </tr>
-</tbody>
+</tbody></div>
   &nbsp;
 </table>
-    <style type="text/css">
+    <div id="DIV2"><style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:1px 11px;word-break:normal;}
@@ -164,7 +179,8 @@
     <td class="tg-1acm">1032</td>
   </tr>
 </tbody>
-</table>
+</table></div>
+  <div style="clear:both;"></div>  
   <body style="background-color:#ffffff;">
 
 </body>  
