@@ -29,31 +29,30 @@
   <img src="box_images/E文.png" width='1005.6px' height='814px'>
   </div>
    <style type="text/css">
-       <!--
-.datatable tr:hover{
-        background-color:#cce1ff;
-        color:#000000;
-        }
-    -->
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;
-  padding:10px 20px;word-break:normal;}
-.tg th{border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;
-  overflow:hidden;padding:10px 20px;word-break:normal;}
-.tg .tg-czql{border-color:#9b9b9b;color:#9b9b9b;border-top-style:none;border-right-style:solid;border-bottom-style:solid;
-             border-left-style:solid;border-width:1px;font-family:Arial, Helvetica, sans-serif !important;
-             ;font-size:10px;text-align:center;vertical-align:middle}
-.tg .tg-cz01{border-color:#9b9b9b;color:#9b9b9b;font-family:Arial, Helvetica, sans-serif !important;;font-size:10px;
-  text-align:center;vertical-align:middle}     
-.tg .tg-cs9h{border-color:#9b9b9b;color:#9b9b9b;font-family:Arial, Helvetica, sans-serif !important;;text-align:center;
-  vertical-align:middle}
-.tg .tg-o25o{border-color:#9b9b9b;color:#9b9b9b;font-family:Arial, Helvetica, sans-serif !important;;font-size:10px;
-  text-align:center;vertical-align:middle}
-.tg .tg-eqvn{border-color:#9b9b9b;color:#9b9b9b;font-family:Arial, Helvetica, sans-serif !important;;font-size:10px;
-  text-align:center;vertical-align:top}
+table {
+  overflow: hidden;
+}
+
+tr:hover {
+  background-color: #ffa;
+}
+
+td, th {
+  position: relative;
+}
+td:hover::after,
+th:hover::after {
+  content: "";
+  position: absolute;
+  background-color: #ffa;
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
+}
 </style>
-<div class="datatable">
-<table class="tg" style="undefined;table-layout: fixed; width: 747px">
+<table style="undefined;table-layout: fixed; width: 747px">
 <colgroup>
 <col style="width: 96px">
 <col style="width: 66px">
@@ -80,31 +79,31 @@
 </thead>
 <tbody>
   <tr>
-    <td class="tg-o25o" rowspan="5">TEN-I / TEN-B</td>
-    <td class="tg-cs9h" rowspan="5">Alloy</td>
-    <td class="tg-cz01" rowspan="5">3-SPLINE HUB<br><br>9-SPLINE HUB<br><br>THREAD-ON <br>FREEWHEEL</td>
-    <td class="tg-cz01" rowspan="5">GTSP-22T</td>
-    <td class="tg-cz01" rowspan="5">115T<br>118T<br>122T<br>125T<br>128T<br>133T</td>
-    <td class="tg-cz01" rowspan="5">170 / 175</td>
-    <td class="tg-cz01" rowspan="5">104</td>
-    <td class="tg-cz01">44</td>
-    <td class="tg-eqvn">CWD-GTSP-44T</td>
+    <td rowspan="5">TEN-I / TEN-B</td>
+    <td rowspan="5">Alloy</td>
+    <td rowspan="5">3-SPLINE HUB<br><br>9-SPLINE HUB<br><br>THREAD-ON <br>FREEWHEEL</td>
+    <td rowspan="5">GTSP-22T</td>
+    <td rowspan="5">115T<br>118T<br>122T<br>125T<br>128T<br>133T</td>
+    <td rowspan="5">170 / 175</td>
+    <td rowspan="5">104</td>
+    <td>44</td>
+    <td>CWD-GTSP-44T</td>
   </tr>
   <tr>
-    <td class="tg-cz01">48</td>
-    <td class="tg-eqvn">CWD-GTSP-48T</td>
+    <td>48</td>
+    <td>CWD-GTSP-48T</td>
   </tr>
   <tr>
-    <td class="tg-cz01">52</td>
-    <td class="tg-eqvn">CWD-GTSP-52T</td>
+    <td>52</td>
+    <td>CWD-GTSP-52T</td>
   </tr>
   <tr>
-    <td class="tg-cz01">56</td>
-    <td class="tg-eqvn">CWD-GTSP-56T</td>
+    <td>56</td>
+    <td>CWD-GTSP-56T</td>
   </tr>
   <tr>
-    <td class="tg-czql">60</td>
-    <td class="tg-eqvn">CWD-GTSP-60T</td>
+    <td>60</td>
+    <td>CWD-GTSP-60T</td>
   </tr>
 </tbody>
 </table>
