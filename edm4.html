@@ -29,6 +29,56 @@
   <img src="box_images/E文.png" width='1005.6px' height='859px'>
   </div>
    <style type="text/css">
+table {
+  overflow: hidden;
+}
+
+td, th {
+  padding: 10px;
+  position: relative;
+  outline: 0;
+}
+
+body:not(.nohover) tbody tr:hover {
+  background-color: #FFFFFF;
+}
+
+td:hover::after,
+thead th:not(:empty):hover::after,
+td:focus::after,
+thead th:not(:empty):focus::after { 
+  content: '';  
+  height: 10000px;
+  left: 0;
+  position: absolute;  
+  top: -5000px;
+  width: 100%;
+  z-index: -1;
+}
+
+td:hover::after,
+th:hover::after {
+  background-color: #FFFFFF;
+}
+
+td:focus::after,
+th:focus::after {
+  background-color: lightblue;
+}
+
+/* Focus stuff for mobile */
+td:focus::before,
+tbody th:focus::before {
+  background-color: lightblue;
+  content: '';  
+  height: 100%;
+  top: 0;
+  left: -5000px;
+  position: absolute;  
+  width: 10000px;
+  z-index: -1;
+}
+    -->
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
@@ -96,58 +146,21 @@
     position:relative;
     top:0px;
     left:0px;
-}
-  table {
-  border-radius:4px;
-  width:20%;
-  height:10px;   
-  margin:20px;
-  background-color: white;
-  border-collapse: collapse; 
-}
-tr {
-  border: 1px solid transparent;
-  z-index:7;
-}
-td {
-  text-align:center;
-  padding: 20px;
-  transition: all 0.2s ease-in-out;
-}
-td.highlight {
-  padding:0;
-  width:4px;
-}
-td.highlight div {
-  width:4px;
-  height:10px;
-  border-radius:4px;
-  background-color: white;
-  transition: all 0.2s ease-in-out;
-}
-tr:hover {
- box-shadow: 0px 9px 4px -6px grey;
-}
-tr:hover td{
-  cursor:pointer;
-  color:red;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-}
-
-/* tr:first-child:hover td {
-  border-top: none;
-}
-tr:last-child:hover td {
-  border-bottom: none;
-} */
-tr:hover td.highlight div {
-  transform: scaleX(3);
-}
     -->
+.tg  {border-collapse:collapse;border-spacing:0px;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:1px 0px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:1px 0px;word-break:normal;}
+.tg .tg-c4sg{background-color:#ffffff;border-color:#9b9b9b;text-align:center;vertical-align:top}
+.tg .tg-vbic{border-color:#9b9b9b;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-g1qu{background-color:#dadbdb;border-color:#9b9b9b;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-af64{background-color:#ffffc7;border-color:#9b9b9b;text-align:center;vertical-align:top}
+.tg .tg-7llh{background-color:#f6ef82;border-color:#9b9b9b;text-align:center;vertical-align:top}
+.tg .tg-258h{background-color:#f6ef82;border-color:#9b9b9b;text-align:center;vertical-align:top}
  </style>
      <div id="DIV_1">
-<table style="display:inline;undefined;table-layout: fixed; width: 320px;">
+<table class="tg" style="display:inline;undefined;table-layout: fixed; width: 320px;">
 <colgroup>
 <col style="width: 64px">
 <col style="width: 64px">
@@ -157,53 +170,44 @@ tr:hover td.highlight div {
 </colgroup>
 <thead>
   <tr>
-    <th colspan="5"><span style="color:#5A5B5B">STREAM A</th>
+    <th class="tg-vbic" colspan="5"><span style="color:#5A5B5B">STREAM A</th>
   </tr>
 </thead>
-<tbody>
-  <tr>
-    <td><span style="color:#FE0000">Tick☑</span></td>
-    <td><input type="checkbox" name="E-B-01" value="01" onclick="location.href='http://www.cycledrive.com/contact'"></td>
-    <td><input type="checkbox" name="E-B-02" value="02" onclick="location.href='http://www.cycledrive.com/contact'"></td>
-    <td><input type="checkbox" name="E-B-03" value="03" onclick="location.href='http://www.cycledrive.com/contact'"></td>
-    <td><input type="checkbox" name="E-B-04" value="04" onclick="location.href='http://www.cycledrive.com/contact'"></td>
-    <td class="highlight"><div></div> 
+<tr>
+    <td class="tg-g1qu"><span style="color:#FE0000">Tick☑</span></td>
+    <td class="tg-c4sg"><input type="checkbox" name="E-B-01" value="01" onclick="location.href='http://www.cycledrive.com/contact'"></td>
+    <td class="tg-af64"><input type="checkbox" name="E-B-02" value="02" onclick="location.href='http://www.cycledrive.com/contact'"></td>
+    <td class="tg-7llh"><input type="checkbox" name="E-B-03" value="03" onclick="location.href='http://www.cycledrive.com/contact'"></td>
   </tr>
   <tr>
-    <td><span style="color:#5A5B5B">RC</td>
-    <td><span style="color:#5A5B5B">463</td>
-    <td><span style="color:#5A5B5B">474</td>
-    <td><span style="color:#5A5B5B">485</td>
-    <td><span style="color:#5A5B5B">501</td>
-    <td class="highlight"><div></div>   
+    <td class="tg-g1qu"><span style="color:#5A5B5B">RC</td>
+    <td class="tg-c4sg"><span style="color:#5A5B5B">463</td>
+    <td class="tg-af64"><span style="color:#5A5B5B">474</td>
+    <td class="tg-7llh"><span style="color:#5A5B5B">485</td>
   </tr>
-    <td><span style="color:#5A5B5B">Ratio</td>
-    <td><span style="color:#5A5B5B">2</td>
-    <td><span style="color:#5A5B5B">2</td>
-    <td><span style="color:#5A5B5B">2</td>
-    <td><span style="color:#5A5B5B">2</td>
-    <td class="highlight"><div></div>   
+  <tr>
+    <td class="tg-g1qu"><span style="color:#5A5B5B">Ratio</td>
+    <td class="tg-c4sg"><span style="color:#5A5B5B">2</td>
+    <td class="tg-af64"><span style="color:#5A5B5B">2</td>
+    <td class="tg-7llh"><span style="color:#5A5B5B">2</td>
   </tr>
-    <td><span style="color:#5A5B5B">Front</td>
-    <td><span style="color:#5A5B5B">44T</td>
-    <td><span style="color:#5A5B5B">44T</td>
-    <td><span style="color:#5A5B5B">44T</td>
-    <td><span style="color:#5A5B5B">44T</td>
-    <td class="highlight"><div></div>  
+  <tr>
+    <td class="tg-g1qu"><span style="color:#5A5B5B">Front</td>
+    <td class="tg-c4sg"><span style="color:#5A5B5B">44T</td>
+    <td class="tg-af64"><span style="color:#5A5B5B">44T</td>
+    <td class="tg-7llh"><span style="color:#5A5B5B">44T</td>
   </tr>
-    <td><span style="color:#5A5B5B">Rear</td>
-    <td><span style="color:#5A5B5B">22T</td>
-    <td><span style="color:#5A5B5B">22T</td>
-    <td><span style="color:#5A5B5B">22T</td>
-    <td><span style="color:#5A5B5B">22T</td>
-    <td class="highlight"><div></div>  
+  <tr>
+    <td class="tg-g1qu"><span style="color:#5A5B5B">Rear</td>
+    <td class="tg-c4sg"><span style="color:#5A5B5B">22T</td>
+    <td class="tg-af64"><span style="color:#5A5B5B">22T</td>
+    <td class="tg-7llh"><span style="color:#5A5B5B">22T</td>
   </tr>
-    <td><span style="color:#5A5B5B">Belt</td>
-    <td><span style="color:#5A5B5B">118T</td>
-    <td><span style="color:#5A5B5B">120T</td>
-    <td><span style="color:#5A5B5B">122T</td>
-    <td><span style="color:#5A5B5B">125T</td>
-    <td class="highlight"><div></div>
+  <tr>
+    <td class="tg-g1qu"><span style="color:#5A5B5B">Belt</td>
+    <td class="tg-c4sg"><span style="color:#5A5B5B">118T</td>
+    <td class="tg-af64"><span style="color:#5A5B5B">120T</td>
+    <td class="tg-7llh"><span style="color:#5A5B5B">122T</td>
   </tr>
 </tbody>
 </table>
