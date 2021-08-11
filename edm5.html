@@ -10,7 +10,7 @@
     justify-content: center;
     }
   .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #787878; /* Green */
     border: none;
     color: white;
     padding: 16px 32px;
@@ -25,15 +25,9 @@
 }
 
 .button1 {
-    background-color: white; 
-    color: black; 
+    background-color: #9e9e9e; 
+    color: #787878; 
     border: none;
-}
-
-.button1:hover {
-    background-color: #4CAF50;
-    color: white;
-}
 
 .button2 {
     background-color: white; 
@@ -45,13 +39,32 @@
     background-color: #008CBA;
     color: white;
 }
-   .table {
-    display: table;
-    border-collapse: separate;
-    box-sizing: border-box;
-    text-indent: initial;
-    border-spacing: 2px;
-    border-color: grey;
+ table.TB_COLLAPSE {
+  width:100%;
+  border-collapse:collapse;
+}
+table.TB_COLLAPSE caption {
+  padding:10px;
+  font-size:12px;
+  background-color:#f3f6f9;
+}
+   }
+table.TB_COLLAPSE thead th {
+  padding:5px 0px;
+  color:#fff;
+  background-color:#915957;
+}
+table.TB_COLLAPSE tbody td {
+  padding:5px 0px;
+  color:#555;
+  text-align:center;
+  background-color:#fff;
+  border-bottom:1px solid #915957;
+}
+table.TB_COLLAPSE tfoot td {
+  padding:5px 0px;
+  text-align:center;
+  background-color:#d6d6a5;
 }
 </style> 
 </head>
@@ -73,9 +86,10 @@
   <img src="box_images/E文.png" width='1005.6px' height='859px'>
   </div>
             <div class="table" id="table1">
-              <div>STARTER A</div>
+             
             <button class="button button1">
-            <table class="table">
+            <caption>STARTER A</caption>
+            <table class="TB_COLLAPSE">
                <tbody>
                <tr><td>RC</td></tr> 
                <tr><td>463</td></tr> 
