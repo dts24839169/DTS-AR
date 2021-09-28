@@ -9,6 +9,21 @@
     /*align-items:center;*/
     justify-content: center;
     }
+    body {
+      background-image: url(box_images/背景-02.jpg);
+      background-repeat:no-repeat;
+
+      background-attachment:local;
+      background-color: #ffffff;
+      background-position: 50% 0%;
+}
+hr.style-one {
+    width: 500px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(99, 99, 99, 0.75), rgba(0,0,0,0));
+}
+
     .button {
     background-color: #ffffff; /* Green */
     border: none;
@@ -25,14 +40,67 @@
     float: left;
 }
 
-    body {
-      background-image: url(box_images/背景-02.jpg);
-      background-repeat:no-repeat;
-
-      background-attachment:local;
-      background-color: #ffffff;
-      background-position: 50% 0%;
+    .btn {
+    border: none;
+    color: white;
+    padding: 0px 1px;
+    font-size: 16px;
+    cursor: pointer;
 }
+    .buttonA {
+    border-radius: 0px;
+    border: none;
+    color: #666666;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px 0px;
+    float: left;
+}
+.button-A span {
+  
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-A span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-A:hover span {
+  color: #ffffff;
+  padding-right: 20px;
+}
+
+.button-A:hover span:after {
+  opacity: 1;
+  
+  right: 0;
+}
+
+
+
+
+.LOGO {
+    background-color: rgba(0, 153, 68, 0.0); 
+    color: black;
+    border-radius: 8px;
+} 
+.LOGO:hover {
+    background: rgb(223, 223, 223);
+}
+
+
 
 .button1 {
     background-color: #971b1d; 
@@ -94,6 +162,49 @@
     background-color: #ffffff;
     color:none;
 }
+.button6 {
+    background-color:rgb(255, 255, 255 ); 
+    color: #858585; 
+    border: none;
+}
+
+.button6:hover {
+    background-color: #c53d3d;
+    color:none;
+}
+
+.button7 {
+    background-color:rgb(255, 255, 255 ); 
+    color: #858585; 
+    border: none;
+}
+
+.button7:hover {
+    background-color: #4bb1e0;
+    color:none;
+}
+
+.button8 {
+    background-color:rgb(255, 255, 255 ); 
+    color: #858585; 
+    border: none;
+}
+
+.button8:hover {
+    background-color: #f3c11e;
+    color:none;
+}
+.button9 {
+    background-color:rgb(255, 255, 255 ); 
+    color: #858585; 
+    border: none;
+}
+
+.button9:hover {
+    background-color: #03ad3c;
+    color:none;
+}
+
 
 .table01 {border-collapse:separate;border-spacing:0px;}
 .table01 td{
@@ -112,6 +223,30 @@
    word-break:normal;
 }
 
+   #DIV_0 {
+          width: 1005px;
+          height:400px;
+          position:relative ;
+          margin: 0 auto;
+          top:0px;
+          left:0px;  
+          } 
+          #DIV_A {
+          width: 1005px;
+          height:50px;
+          position:relative ;
+          margin:auto;
+          top:20px;
+          left:0px;  
+          } 
+          #DIV_B {
+          width: 720px;
+          height:380px;
+          position:relative ;
+          margin:auto;
+          top:50px;
+          left:0px;  
+          } 
 
    #DIV_00 {
           width: 750px;
@@ -964,7 +1099,9 @@
       .table008 th:hover{
         background-color: rgba(0, 153, 68, 0.0);
       }
-
+      div.keepAll{
+        word-break: keep-all
+        }
 </style>
 <script src="JQuery-3.6.0.min.js"></script>
 </head>
@@ -972,9 +1109,52 @@
 <body>
   <center>
 </center>
- <div class="edm"> <img src="box_images/頭2.png" width='1005.6px' height='630px'>
+<div id="DIV_0"> 
+ <div class="edm"> 
+ <div>
+  <img src="box_images/頭2.png">
  </div>
+</div>
+ <div class="edm"> 
+ <button class="btn LOGO" onclick="location.href='http://www.cycledrive.com/index.php'"><img src="box_images/LOGO鈕.png"></button>
+</div>
+</div>
+<div id="DIV_A"> <hr class="style-one" /></div> 
+<div class="edm"> 
+<button class="buttonA button-A button6"><span>E-BIKE </span></button>
+<button class="buttonA button-A button7"><span>ADULE</span></button>
+<button class="buttonA button-A button8"><span>JUNIOR</span></button>
+<button class="buttonA button-A button9"><span>KIDS</span></button>
+</div>
+ 
+<div id="DIV_B"> 
+  <div class="edm"> 
+  <div>
+   <img src="box_images/關於我們.png">
   </div>
+ </div>
+ <div style="font-family:Arial, sans-serif;size: 2px;line-height: 30px;letter-spacing: 1px;color: rgb(109, 109, 109);">
+
+As interest has grown in this alternative drive-train systems 
+
+for bicycles, the Cycle Drive team of dedicated design 
+
+engineers have continued to research new materials and 
+
+processes allowing us to pioneer the most cost-effective 
+
+belt drive technology available for mass produced OEM 
+
+bicycle manufacturers. 
+
+
+Effective design and engineering support ensures the 
+
+successful integration of the CDRIVE belt drive system into 
+
+production bicycles.
+</div>
+</div>
    <center> 
   <img src="box_images/E文.png" width='1005.6px' height='1020px'>
   </div>
@@ -1104,7 +1284,7 @@
                      <tr><td><input type="checkbox" value="E-B-05" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">462</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.18</td></tr>
-                     <tr><td><span style="color:#4b4b4b">44T</td></tr> 
+                     <tr><td><span style="color:#4b4b4b">48T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
                      <tr><td><span style="color:#4b4b4b">120T</td></tr>  
                      </tbody>
@@ -1116,7 +1296,7 @@
                      <tr><td><input type="checkbox" value="E-B-06" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">473</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.18</td></tr>
-                     <tr><td><span style="color:#4b4b4b">44T</td></tr> 
+                     <tr><td><span style="color:#4b4b4b">48T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
                      <tr><td><span style="color:#4b4b4b">122T</td></tr>  
                      </tbody>
@@ -1128,7 +1308,7 @@
                      <tr><td><input type="checkbox" value="E-B-07" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">490</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.18</td></tr>
-                     <tr><td><span style="color:#4b4b4b">44T</td></tr> 
+                     <tr><td><span style="color:#4b4b4b">48T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
                      <tr><td><span style="color:#4b4b4b">125T</td></tr>  
                      </tbody>
@@ -1564,7 +1744,7 @@
                      <tr><td><span style="color:#4b4b4b">439</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.55</td></tr>
                      <tr><td><span style="color:#4b4b4b">56T</td></tr> 
-                     <tr><td><span style="color:#4b4b4b">26T</td></tr>
+                     <tr><td><span style="color:#4b4b4b">22T</td></tr>
                      <tr><td><span style="color:#4b4b4b">120T</td></tr>  
                      </tbody>
                     </table> 
@@ -1576,7 +1756,7 @@
                      <tr><td><span style="color:#4b4b4b">449</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.55</td></tr>
                      <tr><td><span style="color:#4b4b4b">56T</td></tr> 
-                     <tr><td><span style="color:#4b4b4b">26T</td></tr>
+                     <tr><td><span style="color:#4b4b4b">22T</td></tr>
                      <tr><td><span style="color:#4b4b4b">122T</td></tr>  
                      </tbody>
                     </table> 
@@ -1588,7 +1768,7 @@
                      <tr><td><span style="color:#4b4b4b">466</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.55</td></tr>
                      <tr><td><span style="color:#4b4b4b">56T</td></tr> 
-                     <tr><td><span style="color:#4b4b4b">26T</td></tr>
+                     <tr><td><span style="color:#4b4b4b">22T</td></tr>
                      <tr><td><span style="color:#4b4b4b">125T</td></tr>  
                      </tbody>
                     </table> 
