@@ -1107,8 +1107,7 @@ hr.style-one {
 </head>
 </table>
 <body>
-  <center>
-</center>
+
 <div id="DIV_0"> 
  <div class="edm"> 
  <div>
@@ -1121,10 +1120,10 @@ hr.style-one {
 </div>
 <div id="DIV_A"> <hr class="style-one" /></div> 
 <div class="edm"> 
-<button class="buttonA button-A button6"><span>E-BIKE </span></button>
-<button class="buttonA button-A button7"><span>ADULT</span></button>
-<button class="buttonA button-A button8"><span>JUNIOR</span></button>
-<button class="buttonA button-A button9"><span>KIDS</span></button>
+<button class="buttonA button-A button6" id="A"><span>E-BIKE </span></button>
+<button class="buttonA button-A button7" id="B"><span>ADULT</span></button>
+<button class="buttonA button-A button8" id="C"><span>JUNIOR</span></button>
+<button class="buttonA button-A button9" id="D"><span>KIDS</span></button>
 </div>
  
 <div id="DIV_B"> 
@@ -1156,8 +1155,10 @@ production bicycles.
 </div>
 </div>
    <center> 
+     <Div id="DIV_A"></Div>
+     <Div id="A-1">
   <img src="box_images/E文.png" width='1005.6px' height='1020px'>
-  </div>
+  </Div>
   <div id="DIV_v1"> 
    <div class="ALL" id="ALL">
      <div class="A" id="A">
@@ -1447,7 +1448,7 @@ production bicycles.
 
          </div>
     <div id="DIV_000"></div>
-    <div>  
+    <div id="B-1">  
   <img src="box_images/a文.png" width='1005.6px' height='1020px'>
   </div>
 
@@ -1865,7 +1866,7 @@ production bicycles.
                     </div>
 
           <div id="DIV_000"></div>  
-       <div>  
+       <div id="C-1">  
   <img src="box_images/j文.png" width='1005.6px' height='1020px'>
   </div>
   <div id="DIV_v1"> 
@@ -1979,7 +1980,7 @@ production bicycles.
 
                     </div>
           <div id="DIV_000"></div>
-      <div> 
+      <div id="D-1"> 
       <img src="box_images/K文.png" width='1005.6px' height='1020px'>
   </div>
   <div id="DIV_v1"> 
@@ -2605,6 +2606,48 @@ production bicycles.
     imgchange81.style.zIndex="1";
     imgchange81.style.display="none";
   }
+
+  var AA = document.querySelector('#A')  
+  var aa = document.querySelector('#A-1')  
+  
+  var BB = document.querySelector('#B')  
+  var bb = document.querySelector('#B-1')
+     
+  var CC = document.querySelector('#C')  
+  var cc = document.querySelector('#C-1')
+  
+  var DD = document.querySelector('#D')  
+  var dd = document.querySelector('#D-1')
+  
+  
+  function to(toEl) {    
+    let bridge = toEl;    
+    let body = document.body;    
+    let height = 0;      
+    do {      
+      height += bridge.offsetTop;      
+      bridge = bridge.offsetParent;    
+    } while (bridge !== body)        
+    
+     window.scrollTo({      
+      top: height,      
+      behavior: 'smooth'    
+    })  
+  }  
+    AA.addEventListener('click', function () {
+          to(aa)  
+    });
+
+    BB.addEventListener('click', function () {
+          to(bb)  
+    });
+    CC.addEventListener('click', function () {
+          to(cc)  
+    });
+
+    DD.addEventListener('click', function () {
+          to(dd)  
+    });
 
   </script> 
 </body>  
