@@ -9,6 +9,21 @@
     /*align-items:center;*/
     justify-content: center;
     }
+    body {
+      background-image: url(box_images/背景-02.jpg);
+      background-repeat:no-repeat;
+
+      background-attachment:local;
+      background-color: #ffffff;
+      background-position: 50% 0%;
+}
+hr.style-one {
+    width: 500px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(99, 99, 99, 0.75), rgba(0,0,0,0));
+}
+
     .button {
     background-color: #ffffff; /* Green */
     border: none;
@@ -25,14 +40,67 @@
     float: left;
 }
 
-    body {
-      background-image: url(box_images/背景-01.jpg);
-      background-repeat:no-repeat;
-
-      background-attachment:local;
-      background-color: #ffffff;
-      background-position: 50% 0%;
+    .btn {
+    border: none;
+    color: white;
+    padding: 0px 1px;
+    font-size: 16px;
+    cursor: pointer;
 }
+    .buttonA {
+    border-radius: 0px;
+    border: none;
+    color: #666666;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px 0px;
+    float: left;
+}
+.button-A span {
+  
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-A span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-A:hover span {
+  color: #ffffff;
+  padding-right: 20px;
+}
+
+.button-A:hover span:after {
+  opacity: 1;
+  
+  right: 0;
+}
+
+
+
+
+.LOGO {
+    background-color: rgba(0, 153, 68, 0.0); 
+    color: black;
+    border-radius: 8px;
+} 
+.LOGO:hover {
+    background: rgb(223, 223, 223);
+}
+
+
 
 .button1 {
     background-color: #971b1d; 
@@ -40,7 +108,7 @@
     border: none;
 }
 .button01 {
-    background-color: #003C7A; 
+    background-color: #007bc7; 
     color: #bebebe; 
     border: none;
 }
@@ -94,6 +162,53 @@
     background-color: #ffffff;
     color:none;
 }
+.button6 {
+    background-color:rgb(255, 255, 255 ); 
+    color: #858585; 
+    border: none;
+}
+
+.button6:hover {
+    background-color: #c53d3d;
+    color:none;
+}
+
+.button7 {
+    background-color:rgb(255, 255, 255 ); 
+    color: #858585; 
+    border: none;
+}
+
+.button7:hover {
+    background-color: #007bc7;
+    color:none;
+}
+
+.button8 {
+    background-color:rgb(255, 255, 255 ); 
+    color: #858585; 
+    border: none;
+}
+
+.button8:hover {
+    background-color: #f3c11e;
+    color:none;
+}
+.button9 {
+    background-color:rgb(255, 255, 255 ); 
+    color: #858585; 
+    border: none;
+}
+
+.button9:hover {
+    background-color: #03ad3c;
+    color:none;
+}
+
+.button10 {
+    background-color: rgb(255, 255, 255, 0.0 ); 
+    border: none;
+}
 
 .table01 {border-collapse:separate;border-spacing:0px;}
 .table01 td{
@@ -112,10 +227,34 @@
    word-break:normal;
 }
 
+   #DIV_0 {
+          width: 1005px;
+          height:400px;
+          position:relative ;
+          margin: 0 auto;
+          top:0px;
+          left:0px;  
+          } 
+          #DIV_A {
+          width: 1005px;
+          height:50px;
+          position:relative ;
+          margin:auto;
+          top:20px;
+          left:0px;  
+          } 
+          #DIV_B {
+          width: 720px;
+          height:380px;
+          position:relative ;
+          margin:auto;
+          top:50px;
+          left:0px;  
+          } 
 
    #DIV_00 {
           width: 750px;
-          height:200px;
+          height:220px;
           position:relative ;  
           top:0px;
           left:0px;
@@ -134,7 +273,7 @@
           float: right;     
           }     
    #DIV_01 {
-          width: 770px;
+          width: 800px;
           height:220px;
           position:relative ;  
           top:0px;
@@ -150,7 +289,7 @@
           float: right;     
           }
    #DIV_02 {
-          width:730px;
+          width:750px;
           height:220px;
           position:relative ;  
           top:0px;
@@ -779,7 +918,7 @@
       .Z1{
         background-image: url(box_images/引導字眼.png);
         width: 500px;
-        height: 312px;
+        height: 240px;
         margin: 0 auto;
         border: none;
         position: absolute;
@@ -831,7 +970,7 @@
       .W1{
         background-image: url(box_images/引導字眼.png);
         width: 500px;
-        height: 312px;
+        height: 240px;
         margin: 0 auto;
         border: none;
         position: absolute;
@@ -883,7 +1022,7 @@
       .V1{
         background-image: url(box_images/引導字眼.png);
         width: 500px;
-        height: 312px;
+        height: 240px;
         margin: 0 auto;
         border: none;
         position: absolute;
@@ -935,7 +1074,7 @@
       .P1{
         background-image: url(box_images/引導字眼.png);
         width: 500px;
-        height: 312px;
+        height: 240px;
         margin: 0 auto;
         border: none;
         position: absolute;
@@ -964,26 +1103,87 @@
       .table008 th:hover{
         background-color: rgba(0, 153, 68, 0.0);
       }
+      div.keepAll{
+        word-break: keep-all
+        }
+
+        .SA0{
+        background-image: rgba(0, 153, 68, 0.0);  /* 要顯示的圖片 */
+        width: 500px;
+        height: 150px;
+        margin: 0 auto;
+        border: none;
+        position: absolute;  /* 使div呈現絕對位置(位置會初始) 達到重疊 */
+        z-index: 10;
+         /* 圖層(數字越小越下面) */
+      }
+      .SA1{
+        background-image: rgba(0, 153, 68,);
+        width: 500px;
+        height: 240px;
+        margin: 0 auto;
+        border: none;
+        position: absolute;
+        z-index: 9;
+        display: none;
+      }
+     
 
 </style>
 <script src="JQuery-3.6.0.min.js"></script>
 </head>
 </table>
 <body>
-  <center>
-     <style>.embed-container { position: relative; padding-bottom: 56.25%;
-    height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, 
-    .embed-container object, .embed-container embed { position: absolute; top: 0; 
-    left: 0; width: 100%; height: 100%; }</style>
-    <div class="iframe-16x9"><video src="box_images/Float Belt Drive-42.mp4" width="1005.6" height="565.3" 
-     controls poster="box_images/Float Belt Drive-42_Moment.jpg">
-     </iframe></div></center>
- <div class="edm">
-  <img src="box_images/頭01.png" width='1005.6px' height='1812px'>
+
+<div id="DIV_0"> 
+ <div class="edm"> 
+ <div>
+  <img src="box_images/頭2.png">
+ </div>
+</div>
+ <div class="edm"> 
+ <button class="btn LOGO" onclick="location.href='http://www.cycledrive.com/index.php'"><img src="box_images/LOGO鈕.png"></button>
+</div>
+</div>
+<div id="DIV_A"> <hr class="style-one" /></div> 
+<div class="edm"> 
+<button class="buttonA button-A button6" id="A"><span>E-BIKE </span></button>
+<button class="buttonA button-A button7" id="B"><span>ADULT</span></button>
+<button class="buttonA button-A button8" id="C"><span>JUNIOR</span></button>
+<button class="buttonA button-A button9" id="D"><span>KIDS</span></button>
+</div>
+ 
+<div id="DIV_B"> 
+  <div class="edm"> 
+  <div>
+   <img src="box_images/關於我們.png">
   </div>
+ </div>
+ <div style="font-family:Arial, sans-serif;size: 2px;line-height: 30px;letter-spacing: 1px;color: rgb(109, 109, 109);">
+
+  As demand has grown in this ideally drive-train systems 
+  
+  for bicycles, the Cycle Drive team of dedicated design 
+  
+  engineers have continued to research new materials and 
+  
+  processes allowing us to pioneer the most cost-effective 
+  
+  belt drive technology available for mass produced OEM bicycle 
+  
+  manufacturers. Effective design and engineering support ensures 
+  
+  the successful integration of the CDRIVE belt drive system into 
+  
+  production bicycles.
+  
+</div>
+</div>
    <center> 
+     <Div id="DIV_A"></Div>
+     <Div id="A-1">
   <img src="box_images/E文.png" width='1005.6px' height='1020px'>
-  </div>
+  </Div>
   <div id="DIV_v1"> 
    <div class="ALL" id="ALL">
      <div class="A" id="A">
@@ -1032,7 +1232,7 @@
                   <table class="table01"style="undefined;button-layout: fixed; width: 46px;">
                      <tbody>
                      <tr><td><span style="color:#ffffff"><strong>☑</strong></td></tr> 
-                     <tr><td><span style="color:#ffffff"><strong>RC</strong></td></tr> 
+                     <tr><td><span style="color:#ffffff"><strong>RC<font size="1">(mm)</font></strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Ratio</strong></td></tr>
                      <tr><td><span style="color:#ffffff"><strong>Front</strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Rear</strong></td></tr>
@@ -1040,63 +1240,63 @@
                      </tbody>
                     </table> 
                     </button>
-               <button class="button button2">
+               <button class="button button2" id="SA">
                   <table class="table01" style="width: 55px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-01" value="RC:463 Ratio:2 Front:44T Rear:22T Belt:118"></td></tr> 
+                     <tr><td><input type="checkbox" value="E-B-01" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">463</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2</td></tr>
                      <tr><td><span style="color:#4b4b4b">44T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">118</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">118T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
-               <button class="button button2">
+               <button class="button button2" id="SB">
                   <table class="table01" style="width: 55px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:474 Ratio:2 Front:44T Rear:22T Belt:120"></td></tr> 
+                     <tr><td><input type="checkbox" value="E-B-02" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">474</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2</td></tr>
                      <tr><td><span style="color:#4b4b4b">44T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">120</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">120T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
-              <button class="button button2">
+              <button class="button button2" id="SC">
                   <table class="table01" style="width: 55px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-03" value="RC:485 Ratio:2 Front:44T Rear:22T Belt:122"></td></tr> 
+                     <tr><td><input type="checkbox" value="E-B-03" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">485</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2</td></tr>
                      <tr><td><span style="color:#4b4b4b">44T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">122</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">122T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
-            <button class="button button2">
+            <button class="button button2" id="SD">
                   <table class="table01" style="width: 55px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:501 Ratio:2 Front:44T Rear:22T Belt:125"></td></tr> 
+                     <tr><td><input type="checkbox" value="E-B-04" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">501</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2</td></tr>
                      <tr><td><span style="color:#4b4b4b">44T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">125</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">125T</td></tr>  
                      </tbody>
                     </table> 
                     </button> 
                  </div>
-             <div class="t2">  
+             <div class="t2" id="SB">  
                 <div style= "color:#666666;margin-top:15px;font-family:Arial, Helvetica, sans-serif;"><strong>
                     STREAM B</strong></div> 
                    <button class="button button1" >
                   <table class="table01"style="width: 46px;">
                      <tbody>
                      <tr><td><span style="color:#ffffff"><strong>☑</strong></td></tr> 
-                     <tr><td><span style="color:#ffffff"><strong>RC</strong></td></tr> 
+                     <tr><td><span style="color:#ffffff"><strong>RC<font size="1">(mm)</font></strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Ratio</strong></td></tr>
                      <tr><td><span style="color:#ffffff"><strong>Front</strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Rear</strong></td></tr>
@@ -1104,39 +1304,39 @@
                      </tbody>
                     </table> 
                     </button>
-               <button class="button button2">
+               <button class="button button2" id="S1">
                   <table class="table01" style="width: 78px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-01" value="RC:462 Ratio:2.18 Front:48T Rear:22T Belt:120"></td></tr> 
+                     <tr><td><input type="checkbox" value="E-B-05" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">462</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.18</td></tr>
-                     <tr><td><span style="color:#4b4b4b">44T</td></tr> 
+                     <tr><td><span style="color:#4b4b4b">48T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">120</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">120T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
-               <button class="button button2">
+               <button class="button button2" id="S2">
                   <table class="table01" style="width: 78px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:473 Ratio:2.18 Front:48T Rear:22T Belt:122"></td></tr> 
+                     <tr><td><input type="checkbox" value="E-B-06" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">473</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.18</td></tr>
-                     <tr><td><span style="color:#4b4b4b">44T</td></tr> 
+                     <tr><td><span style="color:#4b4b4b">48T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">122</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">122T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
-              <button class="button button2">
+              <button class="button button2" id="S3">
                   <table class="table01" style=" width: 78px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-03" value="RC:490 Ratio:2.18 Front:48T Rear:22T Belt:125"></td></tr> 
+                     <tr><td><input type="checkbox" value="E-B-07" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">490</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.18</td></tr>
-                     <tr><td><span style="color:#4b4b4b">44T</td></tr> 
+                     <tr><td><span style="color:#4b4b4b">48T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">125</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">125T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
@@ -1144,14 +1344,14 @@
          <div style="clear:both;"></div>
         </div> 
           <div id="DIV_00">
-              <div class="t1"> 
+              <div class="t1" id="SC"> 
                     <div style= "color:#666666;margin-top:15px;font-family:Arial, Helvetica, sans-serif;"><strong>
                     STREAM C</strong></div> 
-                   <button class="button button1" >
+                   <button class="button button1">
                   <table class="table01"style="undefined;button-layout: fixed; width: 46px;">
                      <tbody>
                      <tr><td><span style="color:#ffffff"><strong>☑</strong></td></tr> 
-                     <tr><td><span style="color:#ffffff"><strong>RC</strong></td></tr> 
+                     <tr><td><span style="color:#ffffff"><strong>RC<font size="1">(mm)</font></strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Ratio</strong></td></tr>
                      <tr><td><span style="color:#ffffff"><strong>Front</strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Rear</strong></td></tr>
@@ -1159,51 +1359,51 @@
                      </tbody>
                     </table> 
                     </button>
-               <button class="button button2">
+               <button class="button button2" id="S01">
                   <table class="table01" style="width: 78px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-01" value="RC:461 Ratio:2.36 Front:52T Rear:22T Belt:122"></td></tr> 
+                     <tr><td><input type="checkbox" value="E-B-08" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">461</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.36</td></tr>
                      <tr><td><span style="color:#4b4b4b">52T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">122</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">122T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
-               <button class="button button2">
+               <button class="button button2" id="S02">
                   <table class="table01" style="width: 78px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:478 Ratio:2.36 Front:52T Rear:22T Belt:125"></td></tr> 
+                     <tr><td><input type="checkbox" value="E-B-09" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">478</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.36</td></tr>
                      <tr><td><span style="color:#4b4b4b">52T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">125</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">125T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
-              <button class="button button2">
+              <button class="button button2" id="S03">
                   <table class="table01" style="width:78px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-03" value="RC:494 Ratio:2.36 Front:52T Rear:22T Belt:128"></td></tr> 
+                     <tr><td><input type="checkbox" value="E-B-10" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">494</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.36</td></tr>
                      <tr><td><span style="color:#4b4b4b">52T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">128</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">128T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                  </div>
-             <div class="t2">  
+             <div class="t2" id="SD">  
                 <div style= "color:#666666;margin-top:15px;font-family:Arial, Helvetica, sans-serif;"><strong>
                     STREAM D</strong></div> 
                    <button class="button button1" >
                   <table class="table01"style="width: 46px;">
                      <tbody>
                      <tr><td><span style="color:#ffffff"><strong>☑</strong></td></tr> 
-                     <tr><td><span style="color:#ffffff"><strong>RC</strong></td></tr> 
+                     <tr><td><span style="color:#ffffff"><strong>RC<font size="1">(mm)</font></strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Ratio</strong></td></tr>
                      <tr><td><span style="color:#ffffff"><strong>Front</strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Rear</strong></td></tr>
@@ -1211,39 +1411,39 @@
                      </tbody>
                     </table> 
                     </button>
-               <button class="button button2">
+               <button class="button button2" id="S-1">
                   <table class="table01" style="width: 78px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-01" value="RC:466 Ratio:2.55 Front:56T Rear:22T Belt:125"></td></tr> 
+                     <tr><td><input type="checkbox" value="E-B-11" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">466</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.55</td></tr>
                      <tr><td><span style="color:#4b4b4b">56T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">125</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">125T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
-               <button class="button button2">
+               <button class="button button2" id="S-2">
                   <table class="table01" style="width: 78px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:471 Ratio:2.73 Front:60T Rear:22T Belt:128"></td></tr> 
+                     <tr><td><input type="checkbox" value="E-B-12" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">471</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.73</td></tr>
                      <tr><td><span style="color:#4b4b4b">60T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">128</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">128T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
-              <button class="button button2">
+              <button class="button button2" id="S-3">
                   <table class="table01" style=" width: 78px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-03" value="RC:498 Ratio:2.73 Front:60T Rear:22T Belt:133"></td></tr> 
+                     <tr><td><input type="checkbox" value="E-B-13" onclick="location.href='http://www.cycledrive.com/package_set'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">498</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.73</td></tr>
                      <tr><td><span style="color:#4b4b4b">60T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">133</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">133T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
@@ -1265,7 +1465,8 @@
         <tbody>
           <tr>
           <th id="Q1" onmouseover="Target81()" onmouseout="Out81()" 
-          style=" width: 50px;"><img src="box_images/放大小圖.png"></th>  <!-- Target1() Out1()指定要執行的格子 -->
+          style=" width: 50px;">
+          <button class="button10" onclick="editBackground01()"><img src="box_images/放大小圖.png"></button></th>  <!-- Target1() Out1()指定要執行的格子 -->
 
         </tr></tbody>
       </table>
@@ -1273,7 +1474,7 @@
 
          </div>
     <div id="DIV_000"></div>
-    <div>  
+    <div id="B-1">  
   <img src="box_images/a文.png" width='1005.6px' height='1020px'>
   </div>
 
@@ -1324,7 +1525,7 @@
                   <table class="table01"style="undefined;button-layout: fixed; width: 46px;">
                      <tbody>
                      <tr><td><span style="color:#ffffff"><strong>☑</strong></td></tr> 
-                     <tr><td><span style="color:#ffffff"><strong>RC</strong></td></tr> 
+                     <tr><td><span style="color:#ffffff"><strong>RC<font size="1">(mm)</font></strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Ratio</strong></td></tr>
                      <tr><td><span style="color:#ffffff"><strong>Front</strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Rear</strong></td></tr>
@@ -1335,60 +1536,60 @@
                 <button class="button button3">
                   <table class="table01" style="width: 46px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-01" value="RC:446 Ratio:2 Front:44T Rear:22T Belt:115"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-01" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">446</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2</td></tr>
                      <tr><td><span style="color:#4b4b4b">44T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">115</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">115T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button3">
                   <table class="table01" style="width: 46px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:463 Ratio:2 Front:44T Rear:22T Belt:118"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-02" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">463</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2</td></tr>
                      <tr><td><span style="color:#4b4b4b">44T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">118</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">118T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button3">
                   <table class="table01" style="width: 46px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-03" value="RC:474 Ratio:2 Front:44T Rear:22T Belt:120"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-03" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">474</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2</td></tr>
                      <tr><td><span style="color:#4b4b4b">44T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">120</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">120T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button3">
                   <table class="table01" style="width: 46px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:485 Ratio:2 Front:44T Rear:22T Belt:122"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-04" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">485</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2</td></tr>
                      <tr><td><span style="color:#4b4b4b">44T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">122</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">122T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button3">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:501 Ratio:2 Front:44T Rear:22T Belt:125" ></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-05" onclick="location.href='http://www.cycledrive.com/packageSet_PC'" ></td></tr> 
                      <tr><td><span style="color:#4b4b4b">501</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2</td></tr>
                      <tr><td><span style="color:#4b4b4b">44T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">125</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">125T</td></tr>  
                      </tbody>
                     </table> 
                     </button> 
@@ -1400,7 +1601,7 @@
                   <table class="table01"style="undefined;button-layout: fixed; width: 46px;">
                      <tbody>
                      <tr><td><span style="color:#ffffff"><strong>☑</strong></td></tr> 
-                     <tr><td><span style="color:#ffffff"><strong>RC</strong></td></tr> 
+                     <tr><td><span style="color:#ffffff"><strong>RC<font size="1">(mm)</font></strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Ratio</strong></td></tr>
                      <tr><td><span style="color:#ffffff"><strong>Front</strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Rear</strong></td></tr>
@@ -1411,60 +1612,60 @@
                     <button class="button button3">
                   <table class="table01" style="width: 46px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-01" value="RC:435 Ratio:2.18 Front:48T Rear:22T Belt:115" ></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-06" onclick="location.href='http://www.cycledrive.com/packageSet_PC'" ></td></tr> 
                      <tr><td><span style="color:#4b4b4b">435</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.18</td></tr>
                      <tr><td><span style="color:#4b4b4b">48T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">115</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">115T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button3">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:451 Ratio:2.18 Front:48T Rear:22T Belt:118"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-07" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">451</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.18</td></tr>
                      <tr><td><span style="color:#4b4b4b">48T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">118</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">118T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button3">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-03" value="RC:462 Ratio:2.18 Front:48T Rear:22T Belt:120"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-08" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">462</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.18</td></tr>
                      <tr><td><span style="color:#4b4b4b">48T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">120</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">120T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button3">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-03" value="RC:473 Ratio:2.18 Front:48T Rear:22T Belt:122"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-09" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">473</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.18</td></tr>
                      <tr><td><span style="color:#4b4b4b">48T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">122</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">122T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button3">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-03" value="RC:490 Ratio:2.18 Front:48T Rear:22T Belt:125"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-10" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">490</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.18</td></tr>
                      <tr><td><span style="color:#4b4b4b">48T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">125</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">125T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
@@ -1479,7 +1680,7 @@
                   <table class="table01"style="undefined;button-layout: fixed; width: 46px;">
                      <tbody>
                      <tr><td><span style="color:#ffffff"><strong>☑</strong></td></tr> 
-                     <tr><td><span style="color:#ffffff"><strong>RC</strong></td></tr> 
+                     <tr><td><span style="color:#ffffff"><strong>RC<font size="1">(mm)</font></strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Ratio</strong></td></tr>
                      <tr><td><span style="color:#ffffff"><strong>Front</strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Rear</strong></td></tr>
@@ -1490,60 +1691,60 @@
                 <button class="button button3">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-01" value="RC:439 Ratio:2.36 Front:52T Rear:22T Belt:118"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-11" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">439</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.36</td></tr>
                      <tr><td><span style="color:#4b4b4b">52T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">118</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">118T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button3">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:450 Ratio:2.36 Front:52T Rear:22T Belt:120"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-12" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">450</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.36</td></tr>
                      <tr><td><span style="color:#4b4b4b">52T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">120</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">120T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button3">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-03" value="RC:461 Ratio:2.36 Front:52T Rear:22T Belt:122"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-13" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">461</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.36</td></tr>
                      <tr><td><span style="color:#4b4b4b">52T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">122</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">122T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button3">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:478 Ratio:2.36 Front:52T Rear:22T Belt:125"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-14" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">478</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.36</td></tr>
                      <tr><td><span style="color:#4b4b4b">52T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">125</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">125T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button3">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:494 Ratio:2.36 Front:52T Rear:22T Belt:128"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-15" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">494</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.36</td></tr>
                      <tr><td><span style="color:#4b4b4b">52T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">128</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">128T</td></tr>  
                      </tbody>
                     </table> 
                     </button> 
@@ -1555,7 +1756,7 @@
                   <table class="table01"style="undefined;button-layout: fixed; width: 46px;">
                      <tbody>
                      <tr><td><span style="color:#ffffff"><strong>☑</strong></td></tr> 
-                     <tr><td><span style="color:#ffffff"><strong>RC</strong></td></tr> 
+                     <tr><td><span style="color:#ffffff"><strong>RC<font size="1">(mm)</font></strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Ratio</strong></td></tr>
                      <tr><td><span style="color:#ffffff"><strong>Front</strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Rear</strong></td></tr>
@@ -1566,11 +1767,11 @@
                     <button class="button button3">
                   <table class="table01" style=" width: 87px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-01" value="RC:439 Ratio:2.55 Front:56T Rear:22T Belt:120"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-16" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">439</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.55</td></tr>
                      <tr><td><span style="color:#4b4b4b">56T</td></tr> 
-                     <tr><td><span style="color:#4b4b4b">26T</td></tr>
+                     <tr><td><span style="color:#4b4b4b">22T</td></tr>
                      <tr><td><span style="color:#4b4b4b">120T</td></tr>  
                      </tbody>
                     </table> 
@@ -1578,11 +1779,11 @@
                     <button class="button button3">
                   <table class="table01" style=" width:87px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:449 Ratio:2.55 Front:56T Rear:22T Belt:122"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-17" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">449</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.55</td></tr>
                      <tr><td><span style="color:#4b4b4b">56T</td></tr> 
-                     <tr><td><span style="color:#4b4b4b">26T</td></tr>
+                     <tr><td><span style="color:#4b4b4b">22T</td></tr>
                      <tr><td><span style="color:#4b4b4b">122T</td></tr>  
                      </tbody>
                     </table> 
@@ -1590,11 +1791,11 @@
                     <button class="button button3">
                   <table class="table01" style=" width: 87px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-03" value="RC:466 Ratio:2.55 Front:56T Rear:22T Belt:125"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-18" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">466</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.55</td></tr>
                      <tr><td><span style="color:#4b4b4b">56T</td></tr> 
-                     <tr><td><span style="color:#4b4b4b">26T</td></tr>
+                     <tr><td><span style="color:#4b4b4b">22T</td></tr>
                      <tr><td><span style="color:#4b4b4b">125T</td></tr>  
                      </tbody>
                     </table> 
@@ -1610,7 +1811,7 @@
                   <table class="table01"style="undefined;button-layout: fixed; width: 46px;">
                      <tbody>
                      <tr><td><span style="color:#ffffff"><strong>☑</strong></td></tr> 
-                     <tr><td><span style="color:#ffffff"><strong>RC</strong></td></tr> 
+                     <tr><td><span style="color:#ffffff"><strong>RC<font size="1">(mm)</font></strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Ratio</strong></td></tr>
                      <tr><td><span style="color:#ffffff"><strong>Front</strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Rear</strong></td></tr>
@@ -1621,48 +1822,48 @@
                     <button class="button button3">
                   <table class="table01" style=" width: 80px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-01" value="RC:438 Ratio:2.73 Front:60T Rear:22T Belt:122" ></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-19" onclick="location.href='http://www.cycledrive.com/packageSet_PC'" ></td></tr> 
                      <tr><td><span style="color:#4b4b4b">438</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.73</td></tr>
                      <tr><td><span style="color:#4b4b4b">60T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">122</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">122T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button3">
                   <table class="table01" style=" width:80px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:454 Ratio:2.73 Front:60T Rear:22T Belt:125"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-20" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">454</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.73</td></tr>
                      <tr><td><span style="color:#4b4b4b">60T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">125</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">125T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button3">
                   <table class="table01" style="width: 80px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-03" value="RC:471 Ratio:2.73 Front:60T Rear:22T Belt:128"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-21" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">471</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.73</td></tr>
                      <tr><td><span style="color:#4b4b4b">60T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">128</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">128T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button3">
                   <table class="table01" style=" width: 80px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-03" value="RC:498 Ratio:2.73 Front:60T Rear:22T Belt:133"></td></tr> 
+                     <tr><td><input type="checkbox" value="A-B-22" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">498</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2.73</td></tr>
                      <tr><td><span style="color:#4b4b4b">60T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">133</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">133T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
@@ -1691,7 +1892,7 @@
                     </div>
 
           <div id="DIV_000"></div>  
-       <div>  
+       <div id="C-1">  
   <img src="box_images/j文.png" width='1005.6px' height='1020px'>
   </div>
   <div id="DIV_v1"> 
@@ -1738,7 +1939,7 @@
                   <table class="table01"style=" width: 46px;">
                      <tbody>
                      <tr><td><span style="color:#ffffff"><strong>☑</strong></td></tr> 
-                     <tr><td><span style="color:#ffffff"><strong>RC</strong></td></tr> 
+                     <tr><td><span style="color:#ffffff"><strong>RC<font size="1">(mm)</font></strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Ratio</strong></td></tr>
                      <tr><td><span style="color:#ffffff"><strong>Front</strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Rear</strong></td></tr>
@@ -1749,36 +1950,36 @@
                     <button class="button button4">
                   <table class="table01" style=" width: 100px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-01" value="RC:408 Ratio:2 Front:44T Rear:22T Belt:108"></td></tr> 
+                     <tr><td><input type="checkbox" value="J-B-01" onclick="location.href='http://www.cycledrive.com/packageSet_JUNIOR'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">408</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2</td></tr>
                      <tr><td><span style="color:#4b4b4b">44T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">108</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">108T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button4">
                   <table class="table01" style=" width:100px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:425 Ratio:2 Front:44T Rear:22T Belt:111"></td></tr> 
+                     <tr><td><input type="checkbox" value="J-B-02" onclick="location.href='http://www.cycledrive.com/packageSet_JUNIOR'""></td></tr> 
                      <tr><td><span style="color:#4b4b4b">425</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2</td></tr>
                      <tr><td><span style="color:#4b4b4b">44T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">111</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">111T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
                     <button class="button button4">
                   <table class="table01" style="width: 100px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-03" value="RC:435 Ratio:2 Front:44T Rear:22T Belt:113" "></td></tr> 
+                     <tr><td><input type="checkbox" value="J-B-03" onclick="location.href='http://www.cycledrive.com/packageSet_JUNIOR'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">435</td></tr> 
                      <tr><td><span style="color:#4b4b4b">2</td></tr>
                      <tr><td><span style="color:#4b4b4b">44T</td></tr> 
                      <tr><td><span style="color:#4b4b4b">22T</td></tr>
-                     <tr><td><span style="color:#4b4b4b">113</td></tr>  
+                     <tr><td><span style="color:#4b4b4b">113T</td></tr>  
                      </tbody>
                     </table> 
                     </button>
@@ -1787,7 +1988,7 @@
                       <div id="DIV_v2"> 
                         <div class="ALL" id="ALL">
                           <div class="W" id="W">
-                            <div class="W0" id="W0" ></div> <!-- 底圖 -->
+                            <div class="W0" id="W0"></div> <!-- 底圖 -->
                             <div class="W1" id="W1"></div> <!-- 第一張圖的存放div -->
                           </div>
                         </div>
@@ -1805,7 +2006,7 @@
 
                     </div>
           <div id="DIV_000"></div>
-      <div> 
+      <div id="D-1"> 
       <img src="box_images/K文.png" width='1005.6px' height='1020px'>
   </div>
   <div id="DIV_v1"> 
@@ -1852,18 +2053,18 @@
                   <table class="table01"style="undefined;button-layout: fixed; width: 46px;">
                      <tbody>
                      <tr><td><span style="color:#ffffff"><strong>☑</strong></td></tr> 
-                     <tr><td><span style="color:#ffffff"><strong>RC</strong></td></tr> 
+                     <tr><td><span style="color:#ffffff"><strong>RC<font size="1">(mm)</font></strong></td></tr> 
                      <tr><td><span style="color:#fffefe"><strong>Ratio</strong></td></tr>
                      <tr><td><span style="color:#ffffff"><strong>Front</strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Rear</strong></td></tr>
-                     <tr><td><span style="color:#ffffff"><strong>Belt</strong></td></tr>  
+                     <tr><td><span style="color:#ffffff"><strong>Belt<font size="1">(mm)</font></strong></td></tr>  
                      </tbody>
                     </table> 
                     </button>
                <button class="button button5">
                   <table class="table01" style=" width: 78px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-01" value="RC:267 Ratio:1.6 Front:48T Rear:30T Belt:848"></td></tr> 
+                     <tr><td><input type="checkbox" value="K-B-01" onclick="location.href='http://www.cycledrive.com/packageSet_STARTER'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">267</td></tr> 
                      <tr><td><span style="color:#4b4b4b">1.6</td></tr>
                      <tr><td><span style="color:#4b4b4b">48T</td></tr> 
@@ -1875,7 +2076,7 @@
                <button class="button button5">
                   <table class="table01" style=" width: 78px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:283 Ratio:1.6 Front:48T Rear:30T Belt:880"></td></tr> 
+                     <tr><td><input type="checkbox" value="K-B-02" onclick="location.href='http://www.cycledrive.com/packageSet_STARTER'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">283</td></tr> 
                      <tr><td><span style="color:#4b4b4b">1.6</td></tr>
                      <tr><td><span style="color:#4b4b4b">48T</td></tr> 
@@ -1887,7 +2088,7 @@
               <button class="button button5">
                   <table class="table01" style=" width: 78px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-03" value="RC:351 Ratio:1.6 Front:48T Rear:30T Belt:1016"></td></tr> 
+                     <tr><td><input type="checkbox" value="K-B-03" onclick="location.href='http://www.cycledrive.com/packageSet_STARTER'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">351</td></tr> 
                      <tr><td><span style="color:#4b4b4b">1.6</td></tr>
                      <tr><td><span style="color:#4b4b4b">48T</td></tr> 
@@ -1904,18 +2105,18 @@
                   <table class="table01"style="undefined;button-layout: fixed; width: 46px;">
                      <tbody>
                      <tr><td><span style="color:#ffffff"><strong>☑</strong></td></tr> 
-                     <tr><td><span style="color:#ffffff"><strong>RC</strong></td></tr> 
+                     <tr><td><span style="color:#ffffff"><strong>RC<font size="1">(mm)</font></strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Ratio</strong></td></tr>
                      <tr><td><span style="color:#ffffff"><strong>Front</strong></td></tr> 
                      <tr><td><span style="color:#ffffff"><strong>Rear</strong></td></tr>
-                     <tr><td><span style="color:#ffffff"><strong>Belt</strong></td></tr>  
+                     <tr><td><span style="color:#ffffff"><strong>Belt<font size="1">(mm)</font></strong></td></tr>  
                      </tbody>
                     </table> 
                     </button>
                <button class="button button5">
                   <table class="table01" style=" width: 78px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-01" value="RC:259 Ratio:1.7 Front:52T Rear:30T Belt:848"></td></tr> 
+                     <tr><td><input type="checkbox" value="K-B-04" onclick="location.href='http://www.cycledrive.com/packageSet_STARTER'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">259</td></tr> 
                      <tr><td><span style="color:#4b4b4b">1.7</td></tr>
                      <tr><td><span style="color:#4b4b4b">52T</td></tr> 
@@ -1927,7 +2128,7 @@
                <button class="button button5">
                   <table class="table01" style=" width: 78px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-02" value="RC:275 Ratio:1.7 Front:52T Rear:30T Belt:880"></td></tr> 
+                     <tr><td><input type="checkbox" value="K-B-05" onclick="location.href='http://www.cycledrive.com/packageSet_STARTER'"></td></tr> 
                      <tr><td><span style="color:#4b4b4b">259</td></tr> 
                      <tr><td><span style="color:#4b4b4b">1.7</td></tr>
                      <tr><td><span style="color:#4b4b4b">52T</td></tr> 
@@ -1939,7 +2140,7 @@
               <button class="button button5">
                   <table class="table01" style=" width: 78px;">
                      <tbody>
-                     <tr><td><input type="checkbox" name="E-B-03" value="RC:343 Ratio:1.7 Front:52T Rear:30T Belt:1016" ></td></tr> 
+                     <tr><td><input type="checkbox" value="K-B-06" onclick="location.href='http://www.cycledrive.com/packageSet_STARTER'" ></td></tr> 
                      <tr><td><span style="color:#4b4b4b">343</td></tr> 
                      <tr><td><span style="color:#4b4b4b">1.7</td></tr>
                      <tr><td><span style="color:#4b4b4b">52T</td></tr> 
@@ -1978,14 +2179,11 @@
   </div> 
 
     <div id="DIV_7"> 
-<font color="BLACK" size="1" face="Arial"><p><strong>Copyright © 2021 DTS Inc.<p></p></strong></p></font> 
+<font color="#858585" size="1" face="Arial" ><p><strong>Copyright © 2021 DTS Inc.<p></p></strong></p></font> 
     </div> 
     </center>
     <script>
-      $(":checkbox").on("click", function () {
-        sessionStorage.setItem("Package", $(this).val());
-        window.location.assign("http://www.cycledrive.com/packageSet_STREAM#table_form");
-      });
+
 
 
   let imgchange1 = document.getElementById('A1');  //指定的div為第一張
@@ -2435,6 +2633,67 @@
     imgchange81.style.display="none";
   }
 
+  var AA = document.querySelector('#A')  
+  var aa = document.querySelector('#A-1')  
+  
+  var BB = document.querySelector('#B')  
+  var bb = document.querySelector('#B-1')
+     
+  var CC = document.querySelector('#C')  
+  var cc = document.querySelector('#C-1')
+  
+  var DD = document.querySelector('#D')  
+  var dd = document.querySelector('#D-1')
+  
+  
+  function to(toEl) {    
+    let bridge = toEl;    
+    let body = document.body;    
+    let height = 0;      
+    do {      
+      height += bridge.offsetTop;      
+      bridge = bridge.offsetParent;    
+    } while (bridge !== body)        
+    
+     window.scrollTo({      
+      top: height,      
+      behavior: 'smooth'    
+    })  
+  }  
+    AA.addEventListener('click', function () {
+          to(aa)  
+    });
+
+    BB.addEventListener('click', function () {
+          to(bb)  
+    });
+    CC.addEventListener('click', function () {
+          to(cc)  
+    });
+
+    DD.addEventListener('click', function () {
+          to(dd)  
+    });
+
+    function editBackground01(){
+      document.getElementById('SA').style.background='#FFFFFF';
+      document.getElementById('SB').style.background='#FFFFFF'; 
+      document.getElementById('SC').style.background='#FFFFFF'; 
+      document.getElementById('SD').style.background='#FFFFFF';
+      
+      document.getElementById('S1').style.background='#FFFFFF'; 
+      document.getElementById('S2').style.background='#FFFFFF'; 
+      document.getElementById('S3').style.background='#FFFFFF';
+
+      document.getElementById('S01').style.background='#FFFFFF'; 
+      document.getElementById('S02').style.background='#FFFFFF'; 
+      document.getElementById('S03').style.background='#FFFFFF';
+    
+      document.getElementById('S-1').style.background='#FFFFFF'; 
+      document.getElementById('S-2').style.background='#FFFFFF'; 
+      document.getElementById('S-3').style.background='#FFFFFF';
+    }
+    
   </script> 
 </body>  
 </html>  
