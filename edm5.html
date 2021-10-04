@@ -205,10 +205,7 @@ hr.style-one {
     color:none;
 }
 
-.button10 {
-    background-color: rgb(255, 255, 255, 0.0 ); 
-    border: none;
-}
+
 
 .table01 {border-collapse:separate;border-spacing:0px;}
 .table01 td{
@@ -1107,28 +1104,10 @@ hr.style-one {
         word-break: keep-all
         }
 
-        .SA0{
-        background-image: rgba(0, 153, 68, 0.0);  /* 要顯示的圖片 */
-        width: 500px;
-        height: 150px;
-        margin: 0 auto;
-        border: none;
-        position: absolute;  /* 使div呈現絕對位置(位置會初始) 達到重疊 */
-        z-index: 10;
-         /* 圖層(數字越小越下面) */
-      }
-      .SA1{
-        background-image: rgba(0, 153, 68,);
-        width: 500px;
-        height: 240px;
-        margin: 0 auto;
-        border: none;
-        position: absolute;
-        z-index: 9;
-        display: none;
-      }
-     
-
+      .active1{background-color: #ffbebe;}
+      .active2{background-color: #cbecf3;}
+      .active3{background-color: #ffeabd;}
+      .active4{background-color: #daf5c8;}
 </style>
 <script src="JQuery-3.6.0.min.js"></script>
 </head>
@@ -1289,7 +1268,7 @@ hr.style-one {
                     </table> 
                     </button> 
                  </div>
-             <div class="t2" id="SB">  
+             <div class="t2" >  
                 <div style= "color:#666666;margin-top:15px;font-family:Arial, Helvetica, sans-serif;"><strong>
                     STREAM B</strong></div> 
                    <button class="button button1" >
@@ -1344,7 +1323,7 @@ hr.style-one {
          <div style="clear:both;"></div>
         </div> 
           <div id="DIV_00">
-              <div class="t1" id="SC"> 
+              <div class="t1"> 
                     <div style= "color:#666666;margin-top:15px;font-family:Arial, Helvetica, sans-serif;"><strong>
                     STREAM C</strong></div> 
                    <button class="button button1">
@@ -1396,7 +1375,7 @@ hr.style-one {
                     </table> 
                     </button>
                  </div>
-             <div class="t2" id="SD">  
+             <div class="t2">  
                 <div style= "color:#666666;margin-top:15px;font-family:Arial, Helvetica, sans-serif;"><strong>
                     STREAM D</strong></div> 
                    <button class="button button1" >
@@ -1466,7 +1445,10 @@ hr.style-one {
           <tr>
           <th id="Q1" onmouseover="Target81()" onmouseout="Out81()" 
           style=" width: 50px;">
-          <button class="button10" onclick="editBackground01()"><img src="box_images/放大小圖.png"></button></th>  <!-- Target1() Out1()指定要執行的格子 -->
+          <button id="change-btn1" 
+          style=" background-color: rgb(255, 255, 255, 0.0 ); 
+          border: none;">
+          <img src="box_images/放大小圖.png"></button></th>  <!-- Target1() Out1()指定要執行的格子 -->
 
         </tr></tbody>
       </table>
@@ -1533,7 +1515,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                <button class="button button3">
+                <button class="button button3" id="PA">
                   <table class="table01" style="width: 46px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-01" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1545,7 +1527,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="PB">
                   <table class="table01" style="width: 46px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-02" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1557,7 +1539,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="PC">
                   <table class="table01" style="width: 46px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-03" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1569,7 +1551,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="PD">
                   <table class="table01" style="width: 46px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-04" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1581,7 +1563,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="PE">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-05" onclick="location.href='http://www.cycledrive.com/packageSet_PC'" ></td></tr> 
@@ -1609,7 +1591,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="PP">
                   <table class="table01" style="width: 46px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-06" onclick="location.href='http://www.cycledrive.com/packageSet_PC'" ></td></tr> 
@@ -1621,7 +1603,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="P2">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-07" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1633,7 +1615,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="P3">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-08" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1645,7 +1627,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="P4">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-09" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1657,7 +1639,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="P5">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-10" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1688,7 +1670,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                <button class="button button3">
+                <button class="button button3" id="P01">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-11" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1700,7 +1682,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="P02">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-12" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1712,7 +1694,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="P03">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-13" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1724,7 +1706,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="P04">
                   <table class="table01" style=" width: 46px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-14" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1736,7 +1718,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="P05"> 
                   <table class="table01" style=" width: 46px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-15" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1764,7 +1746,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="P-1">
                   <table class="table01" style=" width: 87px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-16" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1776,7 +1758,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="P-2">
                   <table class="table01" style=" width:87px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-17" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1788,7 +1770,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="P-3">
                   <table class="table01" style=" width: 87px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-18" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1819,7 +1801,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="P-A">
                   <table class="table01" style=" width: 80px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-19" onclick="location.href='http://www.cycledrive.com/packageSet_PC'" ></td></tr> 
@@ -1831,7 +1813,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="P-B">
                   <table class="table01" style=" width:80px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-20" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1843,7 +1825,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="P-C">
                   <table class="table01" style="width: 80px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-21" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1855,7 +1837,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button3">
+                    <button class="button button3" id="P-D">
                   <table class="table01" style=" width: 80px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="A-B-22" onclick="location.href='http://www.cycledrive.com/packageSet_PC'"></td></tr> 
@@ -1883,7 +1865,11 @@ hr.style-one {
                             <tbody>
                               <tr>
                               <th id="U1" onmouseover="Target71()" onmouseout="Out71()" 
-                              style=" width: 50px;"><img src="box_images/放大小圖2.png"></th>  <!-- Target1() Out1()指定要執行的格子 -->
+                              style=" width: 50px;">
+                              <button id="change-btn2" 
+                              style=" background-color: rgb(255, 255, 255, 0.0 ); 
+                              border: none;">
+                              <img src="box_images/放大小圖2.png"></button></th>  <!-- Target1() Out1()指定要執行的格子 -->
                     
                             </tr></tbody>
                           </table>
@@ -1947,7 +1933,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button4">
+                    <button class="button button4" id="JA">
                   <table class="table01" style=" width: 100px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="J-B-01" onclick="location.href='http://www.cycledrive.com/packageSet_JUNIOR'"></td></tr> 
@@ -1959,7 +1945,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button4">
+                    <button class="button button4" id="JB">
                   <table class="table01" style=" width:100px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="J-B-02" onclick="location.href='http://www.cycledrive.com/packageSet_JUNIOR'""></td></tr> 
@@ -1971,7 +1957,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-                    <button class="button button4">
+                    <button class="button button4" id="JC">
                   <table class="table01" style="width: 100px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="J-B-03" onclick="location.href='http://www.cycledrive.com/packageSet_JUNIOR'"></td></tr> 
@@ -1998,7 +1984,11 @@ hr.style-one {
                               <tbody>
                                 <tr>
                                 <th id="X1" onmouseover="Target61()" onmouseout="Out61()" 
-                                style=" width: 50px;"><img src="box_images/放大小圖3.png"></th>  <!-- Target1() Out1()指定要執行的格子 -->
+                                style=" width: 50px;">
+                                <button id="change-btn3" 
+                              style=" background-color: rgb(255, 255, 255, 0.0 ); 
+                              border: none;">
+                                <img src="box_images/放大小圖3.png"></button></th>  <!-- Target1() Out1()指定要執行的格子 -->
                       
                               </tr></tbody>
                             </table>
@@ -2061,7 +2051,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-               <button class="button button5">
+               <button class="button button5" id="KA">
                   <table class="table01" style=" width: 78px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="K-B-01" onclick="location.href='http://www.cycledrive.com/packageSet_STARTER'"></td></tr> 
@@ -2073,7 +2063,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-               <button class="button button5">
+               <button class="button button5" id="KB">
                   <table class="table01" style=" width: 78px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="K-B-02" onclick="location.href='http://www.cycledrive.com/packageSet_STARTER'"></td></tr> 
@@ -2085,7 +2075,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-              <button class="button button5">
+              <button class="button button5" id="KC">
                   <table class="table01" style=" width: 78px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="K-B-03" onclick="location.href='http://www.cycledrive.com/packageSet_STARTER'"></td></tr> 
@@ -2113,7 +2103,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-               <button class="button button5">
+               <button class="button button5" id="K1">
                   <table class="table01" style=" width: 78px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="K-B-04" onclick="location.href='http://www.cycledrive.com/packageSet_STARTER'"></td></tr> 
@@ -2125,7 +2115,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-               <button class="button button5">
+               <button class="button button5" id="K2">
                   <table class="table01" style=" width: 78px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="K-B-05" onclick="location.href='http://www.cycledrive.com/packageSet_STARTER'"></td></tr> 
@@ -2137,7 +2127,7 @@ hr.style-one {
                      </tbody>
                     </table> 
                     </button>
-              <button class="button button5">
+              <button class="button button5" id="K3">
                   <table class="table01" style=" width: 78px;">
                      <tbody>
                      <tr><td><input type="checkbox" value="K-B-06" onclick="location.href='http://www.cycledrive.com/packageSet_STARTER'" ></td></tr> 
@@ -2166,7 +2156,11 @@ hr.style-one {
                   <tbody>
                     <tr>
                     <th id="Y1" onmouseover="Target51()" onmouseout="Out51()" 
-                    style=" width: 50px;"><img src="box_images/放大小圖4.png"></th>  <!-- Target1() Out1()指定要執行的格子 -->
+                    style=" width: 50px;">
+                    <button id="change-btn4" 
+                    style=" background-color: rgb(255, 255, 255, 0.0 ); 
+                            border: none;">
+                    <img src="box_images/放大小圖4.png"></button></th>  <!-- Target1() Out1()指定要執行的格子 -->
           
                   </tr></tbody>
                 </table>
@@ -2675,25 +2669,71 @@ hr.style-one {
           to(dd)  
     });
 
-    function editBackground01(){
-      document.getElementById('SA').style.background='#FFFFFF';
-      document.getElementById('SB').style.background='#FFFFFF'; 
-      document.getElementById('SC').style.background='#FFFFFF'; 
-      document.getElementById('SD').style.background='#FFFFFF';
-      
-      document.getElementById('S1').style.background='#FFFFFF'; 
-      document.getElementById('S2').style.background='#FFFFFF'; 
-      document.getElementById('S3').style.background='#FFFFFF';
+    document.getElementById("change-btn1").addEventListener("click", function(){
+      document.querySelector('#SA').classList.toggle('active1')
+      document.querySelector('#SB').classList.toggle('active1')
+      document.querySelector('#SC').classList.toggle('active1')
+      document.querySelector('#SD').classList.toggle('active1')
 
-      document.getElementById('S01').style.background='#FFFFFF'; 
-      document.getElementById('S02').style.background='#FFFFFF'; 
-      document.getElementById('S03').style.background='#FFFFFF';
-    
-      document.getElementById('S-1').style.background='#FFFFFF'; 
-      document.getElementById('S-2').style.background='#FFFFFF'; 
-      document.getElementById('S-3').style.background='#FFFFFF';
-    }
-    
+      document.querySelector('#S1').classList.toggle('active1')
+      document.querySelector('#S2').classList.toggle('active1')
+      document.querySelector('#S3').classList.toggle('active1')
+
+      document.querySelector('#S01').classList.toggle('active1')
+      document.querySelector('#S02').classList.toggle('active1')
+      document.querySelector('#S03').classList.toggle('active1')
+
+      document.querySelector('#S-1').classList.toggle('active1')
+      document.querySelector('#S-2').classList.toggle('active1')
+      document.querySelector('#S-3').classList.toggle('active1')
+    })
+
+    document.getElementById("change-btn2").addEventListener("click", function(){
+      document.querySelector('#PA').classList.toggle('active2')
+      document.querySelector('#PB').classList.toggle('active2')
+      document.querySelector('#PC').classList.toggle('active2')
+      document.querySelector('#PD').classList.toggle('active2')
+      document.querySelector('#PE').classList.toggle('active2')
+
+      document.querySelector('#PP').classList.toggle('active2')
+      document.querySelector('#P2').classList.toggle('active2')
+      document.querySelector('#P3').classList.toggle('active2')
+      document.querySelector('#P4').classList.toggle('active2')
+      document.querySelector('#P5').classList.toggle('active2')
+
+      document.querySelector('#P01').classList.toggle('active2')
+      document.querySelector('#P02').classList.toggle('active2')
+      document.querySelector('#P03').classList.toggle('active2')
+      document.querySelector('#P04').classList.toggle('active2')
+      document.querySelector('#P05').classList.toggle('active2')
+
+      document.querySelector('#P-1').classList.toggle('active2')
+      document.querySelector('#P-2').classList.toggle('active2')
+      document.querySelector('#P-3').classList.toggle('active2')
+
+      document.querySelector('#P-A').classList.toggle('active2')
+      document.querySelector('#P-B').classList.toggle('active2')
+      document.querySelector('#P-C').classList.toggle('active2')
+      document.querySelector('#P-D').classList.toggle('active2')
+    })
+
+    document.getElementById("change-btn3").addEventListener("click", function(){
+      document.querySelector('#JA').classList.toggle('active3')
+      document.querySelector('#JB').classList.toggle('active3')
+      document.querySelector('#JC').classList.toggle('active3')
+    }) 
+
+    document.getElementById("change-btn4").addEventListener("click", function(){
+      document.querySelector('#KA').classList.toggle('active4')
+      document.querySelector('#KB').classList.toggle('active4')
+      document.querySelector('#KC').classList.toggle('active4')
+
+      document.querySelector('#K1').classList.toggle('active4')
+      document.querySelector('#K2').classList.toggle('active4')
+      document.querySelector('#K3').classList.toggle('active4')
+
+    }) 
+
   </script> 
 </body>  
 </html>  
